@@ -1,4 +1,4 @@
-package com.cuddlepuddle.CuddlePuddle;
+package com.cuddlepuddle.cuddlePuddle;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;

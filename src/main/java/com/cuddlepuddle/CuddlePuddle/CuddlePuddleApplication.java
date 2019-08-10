@@ -1,4 +1,4 @@
-package com.cuddlepuddle.CuddlePuddle;
+package com.cuddlepuddle.cuddlePuddle;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
