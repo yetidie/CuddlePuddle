@@ -1,12 +1,57 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns:th="http//www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
     <title>Contact Us</title>
 </head>
 <body>
-If you have any questions or requests about a potential special order feel free to contact us at:
+<!-- This page will be about how to contact us and why you might want to. Make sure that it is in such a way that
+a web bot could not find and use my information for evil.  From here we can also link to the instagram and facebook /-->
+<img src = "images/cuddlePuddleLogo.png"
+     height = "280"
+     Width = "280"
+     alt = "Cuddle Puddle Logo">
+<h1>Contact Us</h1>
 
+<form>
+    <p><label>Name</label>
+        <input type = "text"
+               id = "emailName" />
+    </p>
+    <p><label>Email Address</label>
+        <input type = "text"
+               id = "emailaddress" />
+    </p>
+    <p><label>Email Subject</label>
+        <input type = "text"
+               id = "emailSubject" />
+    </p>
+
+    <p>
+        <label>Enter Text</label>
+    </p>
+    <p>
+      <textarea id = "emailBody"
+                rows = "15"
+                cols = "40">
+	   </textarea>
+        <br>
+        <input type = "submit"/>
+        <input type = "reset"/>
+    </p>
+
+    </form>
+
+
+
+
+    <fieldset>
+
+        <a href = "HomePage.html" class="button">   Home   </a>
+        <a href = "About.html" class="button">   About Us   </a>
+        <a href = "BathProducts.html" class="button">   Bath Products   </a>
+        <a href = "ArtProjects.html" class="button">   Art Projects   </a>
+    </fieldset>
 
 </body>
 </html>
