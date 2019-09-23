@@ -5,6 +5,36 @@
     <title>Cuddle Puddle Bath Products</title>
 </head>
 <body>
+<!--<p th:unless="${bathItems}">Something went wrong.</p> -->
+
+<br/><br/>
+
+Number of Cuddle Puddle bath items currently in the system: <span th:text="${count}"/>.
+<!--
+<ul>
+    <th:block th:each="bathItems: bathItems${bathItems}">
+        <li>
+            <a th:href="${bathItems.bathItemDescription}" th:text="${bathItems.productTitle}">link</a>
+            <a th:href="@{'/bathItems/' + ${bathItems.id} + '/edit'}" style="padding-left: 10px;">Edit</a>
+        </li>
+    </th:block>
+</ul>
+
+-->
+
+<form method="post" action="/bathItems/new">
+    Item Name: <input type="text" name="productTitle" />
+     Category: <input type="text" name="bathCategory" />
+     Description: <input type="text" name="bathItemDescription" />
+    <br/>Price: <input type="text" name="price" />
+     Quantity in Stock: <input type="number" name="inStock" />
+
+    <br/>
+    <br/><input type="submit" value="Add this amazing Cuddle Puddle bath product!"/>
+</form>
+
+</br>
+</br>
 <table>
     <tr>
         <th>Category</th>
@@ -46,7 +76,7 @@
 <br>
 <br>
 
-<a th:href="index">To the Home Page</a>
+<a th:href="@{index}">To the Home Page</a>
 
 </body>
 </html>
