@@ -3,10 +3,7 @@ package com.cuddlepuddle.cuddlePuddle.Controller;
 import com.cuddlepuddle.cuddlePuddle.Models.ArtProjects;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.HashMap;
 
@@ -40,5 +37,19 @@ public class ArtProjectsController {
         artItems.put(id, new ArtProjects ( id, artTitle, artCatgory, artItemDescription, artCost ));
         return "redirect:";
     }
+//    @GetMapping("/{id}/edit")
+//    public String viewArtProjects(Model model, @PathVariable int id){
+//        ArtProjects artItems = artItems.get(id);
+//        model.addAttribute ( "Art Item", artItems );
+//        return "ArtProducts.html";
+//    }
+//
+//    @PostMapping("/{id}/edit")
+//    public String editArtProjects(@ModelAttribute ArtProjects artitems, @PathVariable int id){
+//        artitems.put(id, artitems);
+//        return "redirect:/artProjects"
+//    }
+
+
 
 }

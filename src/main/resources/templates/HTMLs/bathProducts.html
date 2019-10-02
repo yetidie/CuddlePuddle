@@ -1,10 +1,17 @@
 <!DOCTYPE html>
 <html lang="en" xmlns:th="http//www.thymeleaf.org">
+<link rel="stylesheet" type="text/css" href="StyleSheet.css" />
+
 <head>
     <meta charset="UTF-8">
-    <title>Cuddle Puddle Bath Products</title>
+    <title>Cuddle Puddle: Bath Products</title>
 </head>
 <body>
+
+<img src = "images/cuddlePuddleLogo.png"
+     height = "280"
+     Width = "280"
+     alt = "Cuddle Puddle Logo">
 <!--<p th:unless="${bathItems}">Something went wrong.</p> -->
 
 <br/><br/>
@@ -75,6 +82,15 @@ Number of Cuddle Puddle bath items currently in the system: <span th:text="${cou
 </table>
 <br>
 <br>
+
+<br>
+<br>
+<fieldset>
+    <a href = "HomePage.html" class="button">Home Page</a>
+    <a href = "About.html" class="button">About Us</a>
+    <a href = "BathProducts.html" class="button">Bath Products</a>
+    <a href = "ContactUs.html" class="button">Contact Us</a>
+</fieldset>
 
 <a th:href="@{index}">To the Home Page</a>
 

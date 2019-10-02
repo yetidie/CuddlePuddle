@@ -1,4 +1,4 @@
-package com.cuddlepuddle.cuddlePuddle.PagePrograms;
+package com.cuddlepuddle.cuddlePuddle.Models;
 
 public class BathProducts {
     private String bathCategory;

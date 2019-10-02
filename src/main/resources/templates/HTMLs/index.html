@@ -2,10 +2,25 @@
 <html lang="en" xmlns:th="http//www.thymeleaf.org">
 <head>
     <meta charset="UTF-8" />
+
+    <link href="https://fonts.googleapis.com/css?family=Oswald:300,700|Varela+Round" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="StyleSheet.css">
+    <title>Cuddle Puddle: Home Page</title>
+
     <title th:text="${title}"> </title>
 </head>
 <body>
 <h1 th:text="${title}"></h1>
 <img src="../static/images/cuddlepuddlelogo.png" alt="Cuddle Puddle Logo" width="1000" />
+
+
+<h1>Welcome to Cuddle Puddle</h1>
+
+<fieldset>
+    <a href = "About.html" class="button">About Us</a>
+    <a href = "BathProducts.html" class="button">Bath Products</a>
+    <a href = "ArtProjects.html" class="button">Art Projects</a>
+    <a href = "ContactUs.html" class="button">Contact Us</a>
+</fieldset>
 </body>
 </html>

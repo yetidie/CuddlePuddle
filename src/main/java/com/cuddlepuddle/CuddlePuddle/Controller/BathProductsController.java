@@ -1,6 +1,6 @@
 package com.cuddlepuddle.cuddlePuddle.Controller;
 
-import com.cuddlepuddle.cuddlePuddle.PagePrograms.BathProducts;
+import com.cuddlepuddle.cuddlePuddle.Models.BathProducts;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
