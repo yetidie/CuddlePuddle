@@ -15,14 +15,14 @@
 	<name>cuddlePuddle</name>
 	<description>Demo project for Spring Boot</description>
 
-	// == Properties ==
+	<!-- == Properties -->
 
 	<properties>
 		<m2eclipse.wtp.contextRoot>/</m2eclipse.wtp.contextRoot>
 		<java.version>1.8</java.version>
 	</properties>
 
-	// == Dependencies for program ==
+	<!-- Dependencies for program -->
 
 	<dependencies>
 		<dependency>
@@ -86,7 +86,7 @@
 
 	</dependencies>
 
-	// == Build Plug-ins ==
+	<!-- Build Plug-ins -->
 
 	<build>
 		<plugins>
